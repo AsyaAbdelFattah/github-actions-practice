@@ -24,3 +24,6 @@ jobs:
 
       - name: Build
         run: python -m compileall .
+
+      - name: Build Docker image
+        run: docker build -t calculator-app .
